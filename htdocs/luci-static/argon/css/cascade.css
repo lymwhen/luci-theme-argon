@@ -1537,7 +1537,7 @@ select,
 input,
 .cbi-dropdown {
     line-height: 1.5em;
-    padding: .5rem .75rem;
+    padding: .4rem .75rem;
     color: #8898aa;
     border: 1px solid #dee2e6;
     border-radius: .25rem;
@@ -1796,7 +1796,7 @@ h5 {
 }
 
 .login-page .login-container .login-form .form-login .input-group {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0rem;
     position: relative
 }
 
@@ -1811,7 +1811,8 @@ h5 {
     -moz-osx-font-smoothing: grayscale;
     color: #525461;
     color: var(--default);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    opacity: .7;
     position: absolute;
     z-index: 100;
     left: 10px;
@@ -2155,6 +2156,7 @@ header .fill .status span[data-indicator="poll-status"] {
     overflow: hidden;
     box-shadow: unset;
     color: transparent;
+    opacity: 0;
 }
 
 header .fill .status span[data-style="active"] {
@@ -2820,9 +2822,7 @@ tr>th,
 }
 
 .cbi-section-table-row {
-    margin-bottom: 1rem;
     text-align: center !important;
-    background: #f4f4f4
 }
 
 .cbi-section-table-row:last-child {
@@ -2879,7 +2879,7 @@ tr>th,
 
 div>table>tbody>tr:nth-of-type(2n),
 div>.table>.tr:nth-of-type(2n) {
-    background-color: #f9f9f9
+    background-color: #f8f8f8
 }
 
 table table,
@@ -3517,7 +3517,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 
 .cbi-dynlist>.item>span {
     display: block;
-    padding: .5rem .75rem;
+    padding: .4rem .75rem;
     min-width: 15.5rem;
     width: 15.5rem;
     transition: box-shadow .15s ease;
@@ -3548,7 +3548,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 
 .cbi-dynlist>.add-item input {
     display: block;
-    padding: .5rem .75rem;
+    padding: .4rem .75rem;
     box-sizing: border-box;
     min-width: 15.5rem;
     width: 15.5rem;
@@ -3589,7 +3589,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 
 .cbi-dynlist>.add-item .cbi-button-add {
     width: 2.5rem !important;
-    padding: .5rem 0 !important;
+    padding: .4rem 0 !important;
     font-weight: normal;
     font-size: 1.2rem;
     color: #fff;
@@ -3841,8 +3841,8 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
     width: 100%;
     font-size: .75rem;
     background-color: #e9ecef;
-    border-radius: .5rem;
-    height: 1rem;
+    border-radius: .2rem;
+    height: 1.2rem;
     overflow: hidden
 }
 
@@ -3851,20 +3851,21 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
     position: absolute;
     height: 100%;
     background-color: var(--primary);
-    border-radius: .5rem;
+    border-radius: .2rem;
     transition: width .3s
 }
 
 .cbi-progressbar::after {
     content: attr(title);
     position: absolute;
-    font-size: .75rem;
+    font-size: .82rem;
     color: var(--bs-heading-color);
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 1rem;
-    z-index: 2
+    line-height: 1.2rem;
+    z-index: 2;
+    opacity: .85;
 }
 
 #modal_overlay {
@@ -4853,7 +4854,6 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
     right: 33px;
     bottom: 33px;
     left: 33px;
-    border-top: thin solid #ddd !important
 }
 
 #cbi-wireless>#wifi_assoclist_table>.tr.table-titles {
@@ -4861,7 +4861,6 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
 }
 
 #cbi-wireless>#wifi_assoclist_table>.tr.table-titles>.th {
-    border-bottom: thin solid #ddd;
     box-shadow: 0 -1px 0 0 #ddd
 }
 
@@ -5421,7 +5420,6 @@ pre.command-output {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12)
     }
 
     .td.cbi-value-field,

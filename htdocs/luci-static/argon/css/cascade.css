@@ -222,8 +222,8 @@ html {
     align-content: flex-start
 }
 
-@media all and (-ms-high-contrast:none),
-(-ms-high-contrast:active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     table .pure-g {
         display: block
     }
@@ -839,7 +839,7 @@ a.pure-button-selected {
     font-size: .875em
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
     .pure-form button[type=submit] {
         margin: .7em 0 0
     }
@@ -2600,6 +2600,10 @@ body[class*="node-"]>.main>.main-left>.nav>.slide>.menu.active::before {
     display: none
 }
 
+[data-page="admin-system-autoreboot"] #cbi-autoreboot {
+    margin-top: 0
+}
+
 .cbi-section,
 .cbi-section-error,
 #iptables,
@@ -2786,6 +2790,11 @@ tr>th,
     background-color: #f6f9fc;
     padding: 1.1em 1.25rem;
     line-height: 1.3rem
+}
+
+[data-page="admin-services-ddns"] #syslog {
+    overflow: auto;
+    font-size: 12px !important
 }
 
 [data-page="admin-network-network"] .cbi-value-field .cbi-dynlist {
@@ -4029,6 +4038,7 @@ body.modal-overlay-active #modal_overlay {
     text-align: left !important
 }
 
+.button-row,
 .right,
 .right::before {
     text-align: right !important
@@ -4602,7 +4612,7 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
     font-size: inherit !important
 }
 
-@media screen and (max-width:484px) {
+@media screen and (max-width: 484px) {
     div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
         flex-basis: 80px
     }
@@ -4641,6 +4651,19 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
 [data-page="admin-system-poweroff"] .container h2+br+p {
     margin-bottom: 1rem;
     padding-left: 1.5rem
+}
+
+[data-page="admin-system-poweroffdevice"] .container h2 {
+    margin: 0 0 1rem 0
+}
+
+[data-page="admin-system-poweroffdevice"] .container h2+p {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem
+}
+
+[data-page="admin-system-poweroffdevice"] .container button+div {
+    display: none
 }
 
 [data-page="admin-vpn-passwall"] h4 {
@@ -5083,6 +5106,10 @@ pre.command-output {
     height: 100%
 }
 
+[data-page="admin-system-fileassistant"] #upload-toggle {
+    display: none !important
+}
+
 [data-page="admin-system-fileassistant"] .fb-container .panel-title {
     padding: .5rem .75rem !important
 }
@@ -5091,8 +5118,136 @@ pre.command-output {
     padding: .5rem
 }
 
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container label.cbi-value-title {
+    line-height: 1.5rem;
+    padding: .5rem .75rem;
+    width: 60px;
+    text-align: left
+}
+
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container div.cbi-value-field {
+    width: 100%;
+    display: block;
+    padding-left: 60px
+}
+
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content table.cbi-section-table thead td.cbi-section-table-cell,
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content table.cbi-section-table tbody td.cbi-section-table-cell {
+    width: 232px
+}
+
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content tbody tr:nth-child(1) td.parent-icon strong {
+    margin-left: 0 !important
+}
+
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content tbody td.cbi-value-field.file-icon strong,
+[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content tbody td.cbi-value-field.folder-icon strong {
+    vertical-align: middle;
+    margin-left: 5px
+}
+
 [data-page="admin-system-fileassistant"] .fb-container .panel-container {
-    border-bottom-color: #dee2e6
+    border-bottom-color: #dee2e6;
+    display: flex
+}
+
+[data-page="admin-system-fileassistant"] .fb-container .panel-container .panel-title {
+    flex: 1
+}
+
+[data-page="admin-system-fileassistant"] .fb-container .upload-container {
+    display: flex !important
+}
+
+[data-page="admin-system-fileassistant"] .fb-container .upload-container .upload-file {
+    flex: 1;
+    margin-right: 0 !important
+}
+
+[data-page^="admin-services-openclash"] .oc {
+    --bg-light: #fff;
+    --bg-gray: #fff;
+    border-radius: 8px
+}
+
+[data-page^="admin-services-openclash"] .oc .developer-container {
+    background: transparent
+}
+
+[data-page^="admin-services-openclash"] #cbi-openclash>fieldset {
+    background: none;
+    padding: 0
+}
+
+[data-page^="admin-services-openclash"] #cbi-openclash>fieldset>table>tbody>tr>td {
+    border: none;
+    padding: 0
+}
+
+[data-page^="admin-services-openclash"] #cbi-openclash>fieldset .main-card {
+    border: none;
+    box-shadow: none;
+    padding: 0 10px 10px 10px;
+    background: transparent
+}
+
+[data-page^="admin-services-openclash"] #cbi-openclash>fieldset .myip-main-card {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background: transparent
+}
+
+[data-page^="admin-services-openclash"] #cbi-openclash>fieldset .myip-main-card .myip-section-title {
+    margin: 0;
+    border-width: 1px
+}
+
+[data-page^="admin-services-openclash"] .sub-card .card-title {
+    margin-top: 5px
+}
+
+[data-page^="admin-services-openclash"] .oc .main-cards-container {
+    margin: 0 !important;
+    gap: 0 !important
+}
+
+[data-page^="admin-services-openclash"] .oc .config-file-bottom {
+    margin-bottom: 5px
+}
+
+[data-page^="admin-services-openclash"] .oc .config-file-bottom .card-actions {
+    margin-bottom: 2px !important
+}
+
+[data-page^="admin-services-openclash"] .oc .card-content {
+    align-items: center !important;
+    justify-content: center !important
+}
+
+[data-page^="admin-services-openclash"] .oc .card-controls {
+    align-self: center
+}
+
+[data-page^="admin-services-openclash"] .oc .core-main-controls {
+    justify-content: center !important
+}
+
+[data-page^="admin-services-openclash"] .oc .plugin-toggle-container {
+    margin-left: inherit !important
+}
+
+[data-page^="admin-services-openclash"] .oc .core-status-toggle {
+    flex: 0 !important;
+    min-width: auto !important
+}
+
+[data-page^="admin-services-openclash"] .oc .config-upload-content {
+    background: #fff !important
+}
+
+[data-page^="admin-services-openclash"] .oc .subscription-info-container {
+    background: transparent !important
 }
 
 [data-page^="admin-services-openclash"] .cbi-tabmenu>li {
@@ -5165,7 +5320,32 @@ pre.command-output {
     border: none
 }
 
-@media all and (-ms-high-contrast:none) {
+[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".server_addr"]:not([id="cbid.npc.config.server_addr"])+br,
+[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".vkey"]:not([id="cbid.npc.config.vkey"])+br,
+[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".protocol"]:not([id="cbid.npc.config.protocol"])+br,
+[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".dns"]:not([id="cbid.npc.config.dns"])+br {
+    display: none
+}
+
+[data-page="admin-services-npc"] div.cbi-value.nowrap {
+    white-space: normal
+}
+
+[data-page="admin-system-package-manager"] .controls div:nth-child(5)>label {
+    margin-bottom: 5px
+}
+
+[data-page="admin-system-package-manager"] .controls div:nth-child(5)>div label {
+    margin-top: 1rem
+}
+
+[data-page="admin-system-package-manager"] .controls div:nth-child(5)>div label input {
+    top: -2px;
+    right: 0;
+    vertical-align: middle
+}
+
+@media all and (-ms-high-contrast: none) {
     .main>.main-left>.nav>.slide>.menu::before {
         top: 30.25%
     }
@@ -5179,7 +5359,7 @@ pre.command-output {
     }
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width: 1600px) {
     header>.fill>.container>#logo {
         margin: 0 2.5rem 0 .5rem
     }
@@ -5219,7 +5399,7 @@ pre.command-output {
     }
 }
 
-@media screen and (max-width:1366px) {
+@media screen and (max-width: 1366px) {
     header>.fill>.container {
         cursor: default
     }
@@ -5291,7 +5471,7 @@ pre.command-output {
     }
 }
 
-@media screen and (max-width:1152px) {
+@media screen and (max-width: 1152px) {
     header>.fill>.container>#logo {
         display: none
     }
@@ -5490,7 +5670,7 @@ pre.command-output {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     body {
         font-size: .875rem
     }
@@ -5550,7 +5730,7 @@ pre.command-output {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .mobile-hide {
         display: none
     }
@@ -5625,7 +5805,7 @@ pre.command-output {
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
     ::-webkit-scrollbar {
         width: 10px;
         height: 10px
@@ -5650,7 +5830,7 @@ pre.command-output {
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .mobile-hide {
         display: none
     }

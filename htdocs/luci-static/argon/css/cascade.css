@@ -2628,7 +2628,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
   background-color: #f0ad4e !important;
 }
 .modal .btn {
-  padding: 0.45rem 0.8rem;
+  padding: 0.25rem 0.875rem;
 }
 .modal.cbi-modal {
   max-width: 90%;

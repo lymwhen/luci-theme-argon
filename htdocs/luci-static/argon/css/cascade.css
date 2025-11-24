@@ -1268,7 +1268,7 @@ header .fill .status {
   position: relative;
 }
 header .fill .status span {
-display: inline-block;
+  display: inline-block;
   position: absolute;
   margin: 0px 0.05rem;
   width: 0.35rem;
@@ -2321,7 +2321,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 }
 .cbi-dropdown.btn > ul:not(.dropdown),
 .cbi-dropdown.cbi-button > ul:not(.dropdown) {
-  margin: 0 0.75rem;
+  margin: 0 0.45rem 0 0;
 }
 .cbi-dropdown[placeholder*="select"] {
   max-width: 25rem;
@@ -4162,6 +4162,12 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   .main > .main-left > .nav > .slide > .slide-menu > li > a {
     font-size: 0.875rem;
   }
+  .td.cbi-section-actions > * > *, .td.cbi-section-actions > * > form > * {
+    margin: 2.1px 2px;
+  }
+  .td.cbi-section-actions > * {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .mobile-hide {
@@ -4270,81 +4276,81 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
 }
 
 .cbi-title span[data-indicator="poll-status"] {
-	display: none;
+  display: none;
 }
 
 .cbi-button, .btn {
-	/* 布局 */
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-	min-width: 48px;
-	height: 37px;
-    padding: 5px 20px !important;
-    border: none;
-    border-radius: 18px;
-	cursor: pointer;
-	
-	/* box-shadow: 0 0 0 2px var(--primary); */
+  /* 布局 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 48px;
+  height: 37px;
+  padding: 5px 20px !important;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
 
-	/* 文字样式
-	font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif; */
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 0.1px;
-	text-transform: uppercase;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 3px 4px 8px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 0 0 2px var(--primary); */
 
-	/* 动画 */
-	transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
-	outline: none;
-	-webkit-tap-highlight-color: transparent;
-	position: relative;
-	overflow: hidden;
+  /* 文字样式
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 3px 4px 8px rgba(0, 0, 0, 0.05);
+
+  /* 动画 */
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .cbi-button:hover, .btn:hover  {
-	opacity: 0.75;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 3px 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.75;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 3px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 状态层：hover */
 .cbi-button::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: #FFFFFF60;
-	opacity: 0;
-	transition: opacity 0.2s cubic-bezier(0.2, 0, 0, 1);
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #FFFFFF60;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.2, 0, 0, 1);
+  pointer-events: none;
 }
 
 .cbi-button:hover::before {
-	opacity: 0.88;
+  opacity: 0.88;
 }
 
 /* 状态层：pressed */
 .cbi-button:active::before {
-	opacity: 0.88;
+  opacity: 0.88;
 }
 
 /* 焦点层 */
 .cbi-button::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	border-radius: inherit;
-	box-shadow: 0 0 0 2px transparent;
-	transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
+  pointer-events: none;
 }
 
 .cbi-button:focus-visible::after {
-	box-shadow: 0 0 0 2px var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
 }
 
 select, input, .cbi-dropdown {
-    border: 1px solid #dee2e600;
-    background-color: #efefef9e;
+  border: 1px solid #dee2e600;
+  background-color: #efefef9e;
 }

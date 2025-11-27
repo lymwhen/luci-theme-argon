@@ -4309,46 +4309,104 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
 }
 
 .cbi-button:hover, .btn:hover  {
-	opacity: 0.75;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 3px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 状态层：hover */
-.cbi-button::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: #FFFFFF60;
-	opacity: 0;
-	transition: opacity 0.2s cubic-bezier(0.2, 0, 0, 1);
-	pointer-events: none;
-}
-
-.cbi-button:hover::before {
-	opacity: 0.88;
-}
-
-/* 状态层：pressed */
-.cbi-button:active::before {
-	opacity: 0.88;
-}
-
-/* 焦点层 */
-.cbi-button::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	border-radius: inherit;
-	box-shadow: 0 0 0 2px transparent;
-	transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
-	pointer-events: none;
-}
-
-.cbi-button:focus-visible::after {
-	box-shadow: 0 0 0 2px var(--primary);
+	opacity: 0.5;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 3px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 select, input, .cbi-dropdown {
-    border: 1px solid #dee2e600;
+    border: 0px;
     background-color: #efefef9e;
+}
+
+.cbi-dropdown.btn {
+	padding: 5px 10px 5px 20px !important;
+}
+
+input[type="checkbox"] {
+    border: 0;
+    width: 2rem !important;
+    height: 1.2rem !important;
+	background-size: 35%;
+	border-radius: 0.55rem;
+}
+
+input[type="checkbox"]:checked {
+    border: 0;
+	background-size: 35%;
+}
+
+.main-left .nav > li > a:first-child {
+	border-radius: 1.35rem;
+}
+
+.tabs {
+    border-radius: 1.55rem;
+    white-space: nowrap;
+}
+
+.tabs li {
+    border-bottom: 0;
+}
+
+.tabs li[class~="active"], .tabs li:hover {
+    border-bottom: 0;
+    border-radius: 1.55rem;
+}
+
+.tabs li[class~="active"] a, .tabs li:hover a {
+    font-weight: bold;
+}
+
+.cbi-tabmenu li {
+    border-bottom: 0;
+	background: transparent;
+	transition: background .2s;
+    border-radius: 1.55rem;
+}
+
+.cbi-tabmenu li[class~="cbi-tab"], .cbi-tabmenu li:hover {
+    border-bottom: 0;
+    border-radius: 1.55rem;
+}
+
+.cbi-tabmenu li[class~="cbi-tab"] a, .cbi-tabmenu li:hover a {
+    font-weight: bold;
+	color: var(--parmary);
+}
+
+.cbi-tabmenu {
+    margin: 0.6rem 1rem 0 1rem;
+    padding: 0 .5rem;
+    border-radius: 1.55rem;
+    background: #efefef70;
+}
+
+h2 {
+    padding: 1rem 1.25rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--gray-dark);
+    border-radius: 1.55rem;
+}
+
+.cbi-section, .cbi-section-error, #iptables, .Firewall form, #cbi-network > .cbi-section-node, #cbi-wireless > .cbi-section-node, #cbi-wireless > #wifi_assoclist_table, [data-tab-title], [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear), [data-page="admin-system-opkg"] #maincontent > .container {
+    border-radius: 1.55rem;
+	overflow: hidden
+}
+
+.cbi-progressbar {
+    border-radius: 0.55rem;
+}
+
+.cbi-progressbar > div {
+    border-radius: 0.55rem;
+}
+
+.control-group:has(> input:first-child + .cbi-button) input {
+    width: 11.5rem;
+    min-width: unset;
+}
+
+.cbi-rowstyle-2 {
+    background-color: transparent;
 }

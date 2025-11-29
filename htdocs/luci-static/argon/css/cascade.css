@@ -2078,7 +2078,7 @@ td > table > tbody > tr > td,
 .cbi-value input[type="text"],
 .cbi-value input[type="password"],
 .cbi-value textarea {
-  min-width: 18rem;
+  min-width: 16rem;
 }
 #cbi-firewall-zone .cbi-input-select,
 #cbi-network-switch_vlan .cbi-input-select {
@@ -3883,7 +3883,7 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   .cbi-value input[type="text"],
   .cbi-value input[type="password"],
   .cbi-value textarea {
-    min-width: 18rem;
+    min-width: 16rem;
   }
   #cbi-firewall-zone .cbi-input-select {
     min-width: 9rem;
@@ -4378,7 +4378,12 @@ input[type="checkbox"]:checked {
     margin: 0.6rem 1rem 0 1rem;
     padding: 0 .5rem;
     border-radius: 1.55rem;
-    background: #efefef70;
+	max-width: fit-content;
+    background: #f6f6f6;
+}
+
+.cbi-tabmenu li {
+    padding: 0.61rem 0rem;
 }
 
 h2 {
@@ -4389,9 +4394,12 @@ h2 {
     border-radius: 1.55rem;
 }
 
+h3 {
+    border-radius: 1.55rem;
+}
+
 .cbi-section, .cbi-section-error, #iptables, .Firewall form, #cbi-network > .cbi-section-node, #cbi-wireless > .cbi-section-node, #cbi-wireless > #wifi_assoclist_table, [data-tab-title], [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear), [data-page="admin-system-opkg"] #maincontent > .container {
     border-radius: 1.55rem;
-	overflow: hidden
 }
 
 .cbi-progressbar {
@@ -4409,4 +4417,60 @@ h2 {
 
 .cbi-rowstyle-2 {
     background-color: transparent;
+}
+
+.cbi-input-textarea {
+	max-width: 16rem !important;
+	background-color: #efefef9e;
+    border: 0;
+}
+
+.control-group:has(> input:first-child + .cbi-button) input {
+	width: 13rem;
+	border: 0;
+}
+
+.cbi-dynlist > .add-item .cbi-button-add {
+	border: 0;
+	border-radius: 0 1.55rem 1.55rem 0;
+}
+
+.cbi-dynlist > .item > span {
+    min-width: 13rem;
+    width: 13rem;
+	height: 2.2rem;
+    background-color: #efefef9e;
+	border: 0;
+}
+
+.cbi-dynlist > .item::after {
+    width: 3rem !important;
+    height: 2.3rem;
+    border: 0;
+    border-radius: 0 1.55rem 1.55rem 0;
+}
+
+.cbi-dropdown[open] > ul.dropdown > li {
+    border-bottom: 2px solid #e5e5e5;
+    padding: 0.2rem 0.75rem;
+    opacity: 0.75;
+    background: #FFF;
+	min-height: 2.5rem;
+	transition: all .2s ease;
+}
+
+.cbi-dropdown[open] > ul.dropdown > li.focus,
+.cbi-dropdown[open] > ul.dropdown > li:hover,
+.cbi-dropdown[open] > ul.dropdown > li[selected] {
+    background: #cfcfcf9e;
+    padding: 0.5rem 0.75rem;
+}
+
+.cbi-dropdown > ul > li img {
+    margin: 0;
+    scale: 0.7;
+}
+
+table, .table {
+    font-size: 0.8rem;
 }

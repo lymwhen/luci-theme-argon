@@ -4420,7 +4420,6 @@ h3 {
 }
 
 .cbi-input-textarea {
-	max-width: 16rem !important;
 	background-color: #efefef9e;
     border: 0;
 }

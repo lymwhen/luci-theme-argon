@@ -1,25 +1,3 @@
-/**
- *  Argon is a clean HTML5 theme for LuCI. It is based on luci-theme-material and Argon Template
- *
- *  luci-theme-argon
- *      Copyright 2025 Jerrykuku <jerrykuku@qq.com>
- *
- *  Have a bug? Please create an issue here on GitHub!
- *      https://github.com/jerrykuku/luci-theme-argon/issues
- *
- *  luci-theme-material:
- *      Copyright 2015 Lutty Yang <lutty@wcan.in>
- *      https://github.com/LuttyYang/luci-theme-material/
- *
- *  Agron Theme
- *      https://demos.creative-tim.com/argon-dashboard/index.html
- *
- *  Login background
- *      https://unsplash.com/
- *  Font generate by Icomoon<icomoon.io>
- *
- *  Licensed to the public under the Apache License 2.0
- */
 :root {
   --primary: #5e72e4;
   --dark-primary: #483d8b;
@@ -52,31 +30,37 @@
   --blur-opacity: 0.5;
   --blur-radius-dark: 10px;
   --blur-opacity-dark: 0.5;
-  --font-family-sans-serif: "Google Sans", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica", "Hiragino Sans GB";
+  --font-family-sans-serif: "Google Sans", "Microsoft Yahei",
+    "WenQuanYi Micro Hei", "sans-serif", "Helvetica Neue", "Helvetica",
+    "Hiragino Sans GB";
   --dropdown-arrow-icon: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik01LjI5MyA5LjI5M2ExIDEgMCAwIDEgMS40MTQgMEwxMiAxNC41ODZsNS4yOTMtNS4yOTNhMSAxIDAgMSAxIDEuNDE0IDEuNDE0bC02IDZhMSAxIDAgMCAxLTEuNDE0IDBsLTYtNmExIDEgMCAwIDEgMC0xLjQxNCIvPjwvc3ZnPg==");
 }
 /*
  *  Include base and custom css
  */
 @font-face {
-  font-family: 'Google Sans';
-  src: local('Google Sans'), local('GoogleSans-Regular'), url('../fonts/GoogleSans-Regular.woff2') format('woff2'), url('../fonts/GoogleSans-Regular.woff') format('woff');
+  font-family: "Google Sans";
+  src: local("Google Sans"), local("GoogleSans-Regular"),
+    url("../fonts/GoogleSans-Regular.woff2") format("woff2"),
+    url("../fonts/GoogleSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 /*  Logo Font */
 @font-face {
-  font-family: 'TypoGraphica';
-  src: local('TypoGraphica'), url('../fonts/TypoGraphica.woff2') format('woff2'), url('../fonts/TypoGraphica.woff') format('woff');
+  font-family: "TypoGraphica";
+  src: local("TypoGraphica"), url("../fonts/TypoGraphica.woff2") format("woff2"),
+    url("../fonts/TypoGraphica.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 /* Icon Font */
 @font-face {
-  font-family: 'argon';
-  src: url('../fonts/argon.woff2') format('woff2'), url('../fonts/argon.woff') format('woff');
+  font-family: "argon";
+  src: url("../fonts/argon.woff2") format("woff2"),
+    url("../fonts/argon.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -245,41 +229,41 @@ button,
 select {
   text-transform: none;
 }
-[type=button],
-[type=reset],
-[type=submit],
+[type="button"],
+[type="reset"],
+[type="submit"],
 button {
   -webkit-appearance: button;
   appearance: button;
 }
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   appearance: textfield;
   outline-offset: -2px;
 }
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -300,7 +284,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked {
   border: 1px solid var(--primary);
-  background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 8 8\'%3e%3cpath fill=\'%23fff\' d=\'M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z\'/%3e%3c/svg%3e') !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e") !important;
   background-color: var(--primary);
   background-size: 70%;
   background-repeat: no-repeat;
@@ -779,7 +763,7 @@ select[multiple="multiple"] {
   margin-bottom: 1.25rem;
 }
 .login-page .login-container .login-form .form-login .input-group::before {
-  font-family: 'argon' !important;
+  font-family: "argon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -814,24 +798,43 @@ select[multiple="multiple"] {
   background-color: transparent;
   background-clip: padding-box;
   border: 0;
-  border-bottom: 1px solid #FFFFFF40;
+  border-bottom: 1px solid #ffffff40;
   border-radius: 0;
   outline: none;
   box-sizing: border-box;
   box-shadow: 0 3px 2px rgba(233, 236, 239, 0.05);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.login-page .login-container .login-form .form-login .input-group input:focus + .border {
+.login-page
+  .login-container
+  .login-form
+  .form-login
+  .input-group
+  input:focus
+  + .border {
   transform: scaleX(1);
 }
-.login-page .login-container .login-form .form-login .input-group .cbi-input-password {
+.login-page
+  .login-container
+  .login-form
+  .form-login
+  .input-group
+  .cbi-input-password {
   position: relative;
   margin-bottom: 2rem;
 }
-.login-page .login-container .login-form .form-login .input-group.user-icon::before {
+.login-page
+  .login-container
+  .login-form
+  .form-login
+  .input-group.user-icon::before {
   content: "\e971";
 }
-.login-page .login-container .login-form .form-login .input-group.pass-icon::before {
+.login-page
+  .login-container
+  .login-form
+  .form-login
+  .input-group.pass-icon::before {
   content: "\e910";
 }
 .login-page .login-container .login-form .cbi-button-apply {
@@ -937,7 +940,7 @@ select[multiple="multiple"] {
   position: absolute;
   left: 0.8rem;
   padding-top: 3px;
-  font-family: 'argon' !important;
+  font-family: "argon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1068,7 +1071,7 @@ select[multiple="multiple"] {
   position: absolute;
   left: 0.8rem;
   padding-top: 3px;
-  font-family: 'argon' !important;
+  font-family: "argon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1084,7 +1087,7 @@ select[multiple="multiple"] {
   position: absolute;
   right: 0.5rem;
   top: 0.8rem;
-  font-family: 'argon' !important;
+  font-family: "argon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1092,7 +1095,7 @@ select[multiple="multiple"] {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: '\e90f';
+  content: "\e90f";
   color: #ced4da;
   text-rendering: auto;
   transition: all 0.3s;
@@ -1268,7 +1271,7 @@ header .fill .status {
   position: relative;
 }
 header .fill .status span {
-display: inline-block;
+  display: inline-block;
   position: absolute;
   margin: 0px 0.05rem;
   width: 0.35rem;
@@ -1414,7 +1417,7 @@ footer > a {
 .container .alert-message.error {
   position: relative;
   top: 0;
-  transform:translate(-50%, 0);
+  transform: translate(-50%, 0);
   width: 100%;
 }
 .lg {
@@ -1429,7 +1432,8 @@ footer > a {
 #cbi-wireless > .cbi-section-node,
 #cbi-wireless > #wifi_assoclist_table,
 [data-tab-title],
-[data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
+[data-page^="admin-system-admin"]:not(.node-main-login)
+  .cbi-map:not(#cbi-dropbear),
 [data-page="admin-system-opkg"] #maincontent > .container {
   font-family: inherit;
   font-weight: normal;
@@ -1450,7 +1454,8 @@ footer > a {
 #cbi-wireless > .cbi-section-node:last-child,
 #cbi-wireless > #wifi_assoclist_table:last-child,
 [data-tab-title]:last-child,
-[data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear):last-child,
+[data-page^="admin-system-admin"]:not(.node-main-login)
+  .cbi-map:not(#cbi-dropbear):last-child,
 [data-page="admin-system-opkg"] #maincontent > .container:last-child {
   margin: 0;
   border: 0;
@@ -1532,7 +1537,7 @@ fieldset > fieldset,
   padding: 1rem;
 }
 .cbi-tblsection {
-  overflow-x: auto;
+  overflow-x: unset;
 }
 table {
   border-spacing: 0;
@@ -1867,7 +1872,7 @@ td > table > tbody > tr > td,
 }
 .tabs {
   padding: 0 1rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 0.25rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   white-space: nowrap;
@@ -2015,8 +2020,8 @@ td > table > tbody > tr > td,
   transition: opacity 0.25s ease-in;
   margin: inherit !important;
 }
-.cbi-section[id] .cbi-section-remove:nth-of-type(4n+3),
-.cbi-section[id] .cbi-section-node:nth-of-type(4n+4) {
+.cbi-section[id] .cbi-section-remove:nth-of-type(4n + 3),
+.cbi-section[id] .cbi-section-node:nth-of-type(4n + 4) {
   background-color: #f9f9f9;
 }
 .cbi-section-node-tabbed {
@@ -2481,7 +2486,10 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 .cbi-dropdown[open] > ul.dropdown > li[unselectable] {
   opacity: 0.7;
 }
-.cbi-dropdown[open] > ul.dropdown > li > input.create-item-input:first-child:last-child {
+.cbi-dropdown[open]
+  > ul.dropdown
+  > li
+  > input.create-item-input:first-child:last-child {
   width: 100%;
 }
 .cbi-dropdown[disabled] {
@@ -2771,7 +2779,7 @@ td > .ifacebadge,
 }
 #syslog {
   font-size: small;
-  font-family: 'Google Sans';
+  font-family: "Google Sans";
   line-height: 1.25;
   overflow-y: hidden;
   width: 100%;
@@ -2896,7 +2904,13 @@ td > .ifacebadge,
 .uci-dialog .cbi-section .uci-change-list + .right .btn {
   color: #333;
 }
-.uci-dialog .cbi-section .uci-change-list + .right .cbi-dropdown ul:not(.dropdown) li {
+.uci-dialog
+  .cbi-section
+  .uci-change-list
+  + .right
+  .cbi-dropdown
+  ul:not(.dropdown)
+  li {
   color: #fff;
 }
 .uci-dialog .cbi-section .uci-change-list + .right .cbi-button {
@@ -3038,7 +3052,13 @@ span[data-tooltip] .label {
 }
 .zonebadge-empty {
   color: #404040;
-  background: repeating-linear-gradient(45deg, rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0.5) 5px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.5) 10px);
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(204, 204, 204, 0.5),
+    rgba(204, 204, 204, 0.5) 5px,
+    rgba(255, 255, 255, 0.5) 5px,
+    rgba(255, 255, 255, 0.5) 10px
+  );
 }
 .zone-forwards {
   display: flex;
@@ -3172,7 +3192,8 @@ input[name="nslookup"] {
   border-bottom: thin solid #ccc;
   border-radius: 0.25rem;
   background: #eee;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .commandbox h3 {
   line-height: normal !important;
@@ -3254,7 +3275,10 @@ pre.command-output {
 [data-page="admin-system-admin-sshkeys"] .cbi-dynlist {
   margin-left: 1rem;
 }
-[data-page="admin-system-startup"] #view > div:first-child div[data-initialized="true"] {
+[data-page="admin-system-startup"]
+  #view
+  > div:first-child
+  div[data-initialized="true"] {
   margin-top: -0.4375rem;
 }
 [data-page="admin-system-startup"] [data-tab-title] p {
@@ -3320,7 +3344,9 @@ pre.command-output {
   margin-left: 0 !important;
   margin-top: 1rem !important;
 }
-[data-page="admin-system-attendedsysupgrade-configuration"] .cbi-map .cbi-map-descr {
+[data-page="admin-system-attendedsysupgrade-configuration"]
+  .cbi-map
+  .cbi-map-descr {
   padding-bottom: 0;
 }
 [data-page="admin-system-flash"] .cbi-value {
@@ -3381,26 +3407,56 @@ pre.command-output {
 [data-page="admin-system-fileassistant"] .cbi-section.fb-container {
   padding: 0.5rem;
 }
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container label.cbi-value-title {
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  label.cbi-value-title {
   line-height: 1.5rem;
   padding: 0.5rem 0.75rem;
   width: 60px;
   text-align: left;
 }
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container div.cbi-value-field {
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  div.cbi-value-field {
   width: 100%;
   display: block;
   padding-left: 60px;
 }
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content table.cbi-section-table thead td.cbi-section-table-cell,
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content table.cbi-section-table tbody td.cbi-section-table-cell {
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  div#list-content
+  table.cbi-section-table
+  thead
+  td.cbi-section-table-cell,
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  div#list-content
+  table.cbi-section-table
+  tbody
+  td.cbi-section-table-cell {
   width: 232px;
 }
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content tbody tr:nth-child(1) td.parent-icon strong {
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  div#list-content
+  tbody
+  tr:nth-child(1)
+  td.parent-icon
+  strong {
   margin-left: 0 !important;
 }
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content tbody td.cbi-value-field.file-icon strong,
-[data-page="admin-system-fileassistant"] .cbi-section.fb-container div#list-content tbody td.cbi-value-field.folder-icon strong {
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  div#list-content
+  tbody
+  td.cbi-value-field.file-icon
+  strong,
+[data-page="admin-system-fileassistant"]
+  .cbi-section.fb-container
+  div#list-content
+  tbody
+  td.cbi-value-field.folder-icon
+  strong {
   vertical-align: middle;
   margin-left: 5px;
 }
@@ -3408,13 +3464,19 @@ pre.command-output {
   border-bottom-color: #dee2e6;
   display: flex;
 }
-[data-page="admin-system-fileassistant"] .fb-container .panel-container .panel-title {
+[data-page="admin-system-fileassistant"]
+  .fb-container
+  .panel-container
+  .panel-title {
   flex: 1;
 }
 [data-page="admin-system-fileassistant"] .fb-container .upload-container {
   display: flex !important;
 }
-[data-page="admin-system-fileassistant"] .fb-container .upload-container .upload-file {
+[data-page="admin-system-fileassistant"]
+  .fb-container
+  .upload-container
+  .upload-file {
   flex: 1;
   margin-right: 0 !important;
 }
@@ -3438,10 +3500,19 @@ pre.command-output {
 [data-page="admin-system-package-manager"] .controls div:nth-child(5) > label {
   margin-bottom: 5px;
 }
-[data-page="admin-system-package-manager"] .controls div:nth-child(5) > div label {
+[data-page="admin-system-package-manager"]
+  .controls
+  div:nth-child(5)
+  > div
+  label {
   margin-top: 1rem;
 }
-[data-page="admin-system-package-manager"] .controls div:nth-child(5) > div label input {
+[data-page="admin-system-package-manager"]
+  .controls
+  div:nth-child(5)
+  > div
+  label
+  input {
   top: -2px;
   right: 0;
   vertical-align: middle;
@@ -3487,15 +3558,28 @@ pre.command-output {
 [data-page="admin-network-network"] .td > .ifacebadge > .cbi-tooltip-container {
   display: flex;
 }
-[data-page="admin-network-network"] .td > .ifacebadge > .cbi-tooltip-container img {
+[data-page="admin-network-network"]
+  .td
+  > .ifacebadge
+  > .cbi-tooltip-container
+  img {
   vertical-align: middle;
 }
-[data-page="admin-network-network"] div[data-name="_gen_server_keypair"] .cbi-value-title,
-[data-page="admin-network-network"] div[data-name="_gen_peer_keypair"] .cbi-value-title,
+[data-page="admin-network-network"]
+  div[data-name="_gen_server_keypair"]
+  .cbi-value-title,
+[data-page="admin-network-network"]
+  div[data-name="_gen_peer_keypair"]
+  .cbi-value-title,
 [data-page="admin-network-network"] div[data-name="_gen_psk"] .cbi-value-title {
   height: 2.4rem;
 }
-[data-page="admin-network-network"] #modal_overlay > .modal.cbi-modal > div > p > textarea {
+[data-page="admin-network-network"]
+  #modal_overlay
+  > .modal.cbi-modal
+  > div
+  > p
+  > textarea {
   height: 20em !important;
   border: 1px solid #dee2e6 !important;
   border-radius: 4px;
@@ -3619,7 +3703,9 @@ pre.command-output {
 [data-page="admin-services-npc"] div[id="cbid.npc.config.vkey"] {
   white-space: normal;
 }
-[data-page="admin-services-npc"] div[id="cbid.npc.config.vkey"] input[id="widget.cbid.npc.config.vkey"][type="password"] {
+[data-page="admin-services-npc"]
+  div[id="cbid.npc.config.vkey"]
+  input[id="widget.cbid.npc.config.vkey"][type="password"] {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -3627,10 +3713,20 @@ pre.command-output {
   margin: 0;
   border: none;
 }
-[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".server_addr"]:not([id="cbid.npc.config.server_addr"]) + br,
-[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".vkey"]:not([id="cbid.npc.config.vkey"]) + br,
-[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".protocol"]:not([id="cbid.npc.config.protocol"]) + br,
-[data-page="admin-services-npc"] div[id^="cbid.npc."][id$=".dns"]:not([id="cbid.npc.config.dns"]) + br {
+[data-page="admin-services-npc"]
+  div[id^="cbid.npc."][id$=".server_addr"]:not(
+    [id="cbid.npc.config.server_addr"]
+  )
+  + br,
+[data-page="admin-services-npc"]
+  div[id^="cbid.npc."][id$=".vkey"]:not([id="cbid.npc.config.vkey"])
+  + br,
+[data-page="admin-services-npc"]
+  div[id^="cbid.npc."][id$=".protocol"]:not([id="cbid.npc.config.protocol"])
+  + br,
+[data-page="admin-services-npc"]
+  div[id^="cbid.npc."][id$=".dns"]:not([id="cbid.npc.config.dns"])
+  + br {
   display: none;
 }
 [data-page="admin-services-npc"] div.cbi-value.nowrap {
@@ -3648,7 +3744,13 @@ pre.command-output {
   background: none;
   padding: 0;
 }
-[data-page^="admin-services-openclash"] #cbi-openclash > fieldset > table > tbody > tr > td {
+[data-page^="admin-services-openclash"]
+  #cbi-openclash
+  > fieldset
+  > table
+  > tbody
+  > tr
+  > td {
   border: none;
   padding: 0;
 }
@@ -3658,13 +3760,20 @@ pre.command-output {
   padding: 0 10px 10px 10px;
   background: transparent;
 }
-[data-page^="admin-services-openclash"] #cbi-openclash > fieldset .myip-main-card {
+[data-page^="admin-services-openclash"]
+  #cbi-openclash
+  > fieldset
+  .myip-main-card {
   margin: 0;
   padding: 10px;
   border: none;
   background: transparent;
 }
-[data-page^="admin-services-openclash"] #cbi-openclash > fieldset .myip-main-card .myip-section-title {
+[data-page^="admin-services-openclash"]
+  #cbi-openclash
+  > fieldset
+  .myip-main-card
+  .myip-section-title {
   margin: 0;
   border-width: 1px;
 }
@@ -3719,7 +3828,9 @@ pre.command-output {
   box-sizing: content-box;
   width: 15rem !important;
 }
-[data-page^="admin-services-openclash"] [id="container.openclash.config.debug"] fieldset {
+[data-page^="admin-services-openclash"]
+  [id="container.openclash.config.debug"]
+  fieldset {
   border: none !important;
   padding: 1rem !important;
 }
@@ -3730,15 +3841,15 @@ pre.command-output {
   border: 1px solid #dee2e6;
   background-color: transparent;
   border-radius: 0.25rem;
-  font-family: 'Google Sans' !important;
+  font-family: "Google Sans" !important;
   box-shadow: none;
 }
 [data-page^="admin-services-openclash"] #debug-rc-output > textarea {
-  font-family: 'Google Sans' !important;
+  font-family: "Google Sans" !important;
 }
 [data-page^="admin-services-openclash"] .CodeMirror {
   font-size: inherit;
-  font-family: 'Google Sans' !important;
+  font-family: "Google Sans" !important;
 }
 [data-page^="admin-services-openclash"] .cbi-button-up,
 [data-page^="admin-services-openclash"] .cbi-button-down {
@@ -3799,11 +3910,16 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
   text-align: center;
   flex-basis: 100px;
 }
-div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body {
+div[style*="display:grid;grid-template-columns:repeat"]
+  .ifacebox
+  .ifacebox-body {
   font-size: 0.7rem;
   padding: 0.875rem;
 }
-div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body .cbi-tooltip-container {
+div[style*="display:grid;grid-template-columns:repeat"]
+  .ifacebox
+  .ifacebox-body
+  .cbi-tooltip-container {
   font-size: inherit !important;
 }
 /* firewall */
@@ -3904,7 +4020,7 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   }
   .tabs > li > a,
   .cbi-tabmenu > li > a {
-    padding: 0.2rem 0.8rem;
+    padding: 0.2rem 1.2rem;
   }
   .panel-title {
     font-size: 1.1rem;
@@ -4145,7 +4261,7 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
     display: inline-block !important;
   }
   .showSide::before {
-    font-family: 'argon' !important;
+    font-family: "argon" !important;
     font-style: normal !important;
     font-weight: normal !important;
     font-variant: normal !important;
@@ -4162,11 +4278,15 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   .main > .main-left > .nav > .slide > .slide-menu > li > a {
     font-size: 0.875rem;
   }
-  .td.cbi-section-actions > * > *, .td.cbi-section-actions > * > form > * {
+  .td.cbi-section-actions > * > *,
+  .td.cbi-section-actions > * > form > * {
     margin: 2.1px 2px;
   }
   .td.cbi-section-actions > * {
     gap: 0;
+  }
+  .cbi-tabmenu > li > a {
+    padding: 0.2rem 0.8rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -4185,7 +4305,16 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   body {
     overflow-x: hidden;
   }
-  .node-main-login .main .main-right #maincontent .container .cbi-map .cbi-section .cbi-section-node .cbi-value .cbi-value-field {
+  .node-main-login
+    .main
+    .main-right
+    #maincontent
+    .container
+    .cbi-map
+    .cbi-section
+    .cbi-section-node
+    .cbi-value
+    .cbi-value-field {
     width: 16rem;
   }
   .node-main-login footer {
@@ -4235,7 +4364,9 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   div[style*="display:grid;grid-template-columns:repeat"] .ifacebox {
     flex-basis: 80px;
   }
-  div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body {
+  div[style*="display:grid;grid-template-columns:repeat"]
+    .ifacebox
+    .ifacebox-body {
     padding: 0.875rem 0.5rem;
     font-size: 0.6rem;
   }
@@ -4248,7 +4379,7 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   }
   .login-page .login-container .login-form .form-login .input-group input {
     color: #525461;
-    border-bottom: 1px solid #FFFFFF40;
+    border-bottom: 1px solid #ffffff40;
     border-radius: 0;
   }
 }
@@ -4274,202 +4405,234 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
 }
 
 .cbi-title span[data-indicator="poll-status"] {
-	display: none;
+  display: none;
 }
 
-.cbi-button, .btn {
-	/* 布局 */
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-	min-width: 48px;
-	height: 37px;
-    padding: 5px 20px !important;
-    border: none;
-    border-radius: 18px;
-	cursor: pointer;
-	
-	/* box-shadow: 0 0 0 2px var(--primary); */
+.cbi-button,
+.btn {
+  /* 布局 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 48px;
+  height: 37px;
+  padding: 5px 20px !important;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
 
-	/* 文字样式
+  /* box-shadow: 0 0 0 2px var(--primary); */
+
+  /* 文字样式
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif; */
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 0.1px;
-	text-transform: uppercase;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 3px 4px 8px rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 3px 4px 8px rgba(0, 0, 0, 0.05);
 
-	/* 动画 */
-	transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
-	outline: none;
-	-webkit-tap-highlight-color: transparent;
-	position: relative;
-	overflow: hidden;
+  /* 动画 */
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  overflow: hidden;
 }
 
-.cbi-button:hover, .btn:hover  {
-	opacity: 0.5;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 3px 4px 8px rgba(0, 0, 0, 0.2);
+.cbi-button:hover,
+.btn:hover {
+  opacity: 0.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 3px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-select, input, .cbi-dropdown {
-    border: 0px;
-    background-color: #efefef9e;
+select,
+input,
+.cbi-dropdown {
+  border: 0px;
+  background-color: #efefef9e;
 }
 
 .cbi-dropdown.btn {
-	padding: 5px 10px 5px 20px !important;
+  padding: 5px 10px 5px 20px !important;
 }
 
 input[type="checkbox"] {
-    border: 0;
-    width: 2rem !important;
-    height: 1.2rem !important;
-	background-size: 35%;
-	border-radius: 0.55rem;
+  border: 0;
+  width: 2rem !important;
+  height: 1.2rem !important;
+  background-size: 35%;
+  border-radius: 0.55rem;
 }
 
 input[type="checkbox"]:checked {
-    border: 0;
-	background-size: 35%;
+  border: 0;
+  background-size: 35%;
 }
 
 .main-left .nav > li > a:first-child {
-	border-radius: 1.35rem;
+  border-radius: 1.35rem;
 }
 
 .tabs {
-    border-radius: 1.55rem;
-    white-space: nowrap;
+  border-radius: 1.55rem;
+  white-space: nowrap;
 }
 
 .tabs li {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
-.tabs li[class~="active"], .tabs li:hover {
-    border-bottom: 0;
-    border-radius: 1.55rem;
+.tabs li[class~="active"],
+.tabs li:hover {
+  border-bottom: 0;
+  border-radius: 1.55rem;
 }
 
-.tabs li[class~="active"] a, .tabs li:hover a {
-    font-weight: bold;
+.tabs li[class~="active"] a,
+.tabs li:hover a {
+  font-weight: bold;
 }
 
 .cbi-tabmenu li {
-    border-bottom: 0;
-	background: transparent;
-	transition: background .2s;
-    border-radius: 1.55rem;
+  border-bottom: 0;
+  background: transparent;
+  transition: background 0.2s;
+  border-radius: 1.55rem;
 }
 
-.cbi-tabmenu li[class~="cbi-tab"], .cbi-tabmenu li:hover {
-    border-bottom: 0;
-    border-radius: 1.55rem;
+.cbi-tabmenu li[class~="cbi-tab"],
+.cbi-tabmenu li:hover {
+  border-bottom: 0;
+  border-radius: 1.55rem;
 }
 
-.cbi-tabmenu li[class~="cbi-tab"] a, .cbi-tabmenu li:hover a {
-    font-weight: bold;
-	color: var(--parmary);
+.cbi-tabmenu li[class~="cbi-tab"] a,
+.cbi-tabmenu li:hover a {
+  font-weight: bold;
+  color: var(--parmary);
 }
 
 .cbi-tabmenu {
-    margin: 0.6rem 1rem 0 1rem;
-    padding: 0 .5rem;
-    border-radius: 1.55rem;
-	max-width: fit-content;
-    background: #f6f6f6;
+  margin: 0.6rem 1rem 0.6rem 1rem;
+  padding: 0 0.5rem;
+  border-radius: 1.55rem;
+  max-width: fit-content;
+  background: #ffffff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cbi-tabmenu li {
-    padding: 0.61rem 0rem;
+  padding: 0.61rem 0rem;
 }
 
 h2 {
-    padding: 1rem 1.25rem;
-    font-size: 1.15rem;
-    font-weight: bold;
-    color: var(--gray-dark);
-    border-radius: 1.55rem;
+  padding: 1rem 1.25rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--gray-dark);
+  border-radius: 1.55rem;
 }
 
 h3 {
-    border-radius: 1.55rem;
+  border-radius: 1.55rem;
 }
 
-.cbi-section, .cbi-section-error, #iptables, .Firewall form, #cbi-network > .cbi-section-node, #cbi-wireless > .cbi-section-node, #cbi-wireless > #wifi_assoclist_table, [data-tab-title], [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear), [data-page="admin-system-opkg"] #maincontent > .container {
-    border-radius: 1.55rem;
+.cbi-section,
+.cbi-section-error,
+#iptables,
+.Firewall form,
+#cbi-network > .cbi-section-node,
+#cbi-wireless > .cbi-section-node,
+#cbi-wireless > #wifi_assoclist_table,
+[data-tab-title],
+[data-page^="admin-system-admin"]:not(.node-main-login)
+  .cbi-map:not(#cbi-dropbear),
+[data-page="admin-system-opkg"] #maincontent > .container {
+  border-radius: 1.55rem;
 }
 
 .cbi-progressbar {
-    border-radius: 0.55rem;
+  border-radius: 0.55rem;
 }
 
 .cbi-progressbar > div {
-    border-radius: 0.55rem;
+  border-radius: 0.55rem;
 }
 
 .control-group:has(> input:first-child + .cbi-button) input {
-    width: 11.5rem;
-    min-width: unset;
+  width: 11.5rem;
+  min-width: unset;
 }
 
 .cbi-rowstyle-2 {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .cbi-input-textarea {
-	background-color: #efefef9e;
-    border: 0;
+  background-color: #efefef9e;
+  border: 0;
 }
 
 .control-group:has(> input:first-child + .cbi-button) input {
-	width: 13rem;
-	border: 0;
+  width: 13rem;
+  border: 0;
 }
 
 .cbi-dynlist > .add-item .cbi-button-add {
-	border: 0;
-	border-radius: 0 1.55rem 1.55rem 0;
+  border: 0;
+  border-radius: 0 1.55rem 1.55rem 0;
 }
 
 .cbi-dynlist > .item > span {
-    min-width: 13rem;
-    width: 13rem;
-	height: 2.2rem;
-    background-color: #efefef9e;
-	border: 0;
+  min-width: 13rem;
+  width: 13rem;
+  height: 2.2rem;
+  background-color: #efefef9e;
+  border: 0;
 }
 
 .cbi-dynlist > .item::after {
-    width: 3rem !important;
-    height: 2.3rem;
-    border: 0;
-    border-radius: 0 1.55rem 1.55rem 0;
+  width: 3rem !important;
+  height: 2.3rem;
+  border: 0;
+  border-radius: 0 1.55rem 1.55rem 0;
 }
 
 .cbi-dropdown[open] > ul.dropdown > li {
-    border-bottom: 2px solid #e5e5e5;
-    padding: 0.2rem 0.75rem;
-    opacity: 0.75;
-    background: #FFF;
-	min-height: 2.5rem;
-	transition: all .2s ease;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 0.2rem 0.75rem;
+  opacity: 0.75;
+  min-height: 2.5rem;
+  color: #333;
+  background: #fff;
+  transition: all 0.2s ease;
 }
 
 .cbi-dropdown[open] > ul.dropdown > li.focus,
 .cbi-dropdown[open] > ul.dropdown > li:hover,
 .cbi-dropdown[open] > ul.dropdown > li[selected] {
-    background: #cfcfcf9e;
-    padding: 0.5rem 0.75rem;
+  background: #cfcfcf9e;
+  padding: 0.5rem 0.75rem;
+}
+
+.cbi-dropdown[empty] > ul > li,
+.cbi-dropdown[optional][open] > ul.dropdown > li[placeholder],
+.cbi-dropdown[multiple][open] > ul.dropdown > li > form {
+  display: grid;
 }
 
 .cbi-dropdown > ul > li img {
-    margin: 0;
-    scale: 0.7;
+  margin: 0;
+  scale: 0.7;
 }
 
-table, .table {
-    font-size: 0.8rem;
+table,
+.table {
+  font-size: 0.8rem;
+  overflow-y: unset;
+}
+
+#cbi-passwall .block {
+  border: 0 !important;
 }
